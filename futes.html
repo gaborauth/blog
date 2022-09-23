@@ -1,130 +1,208 @@
 <html>
-<head>
-<title>Fűtési rendszerek beállítása és/vagy okosítása</title>
-</head>
-<body>
-<p>Nekem az a meglátásom, hogy minden egyes okosítandó fűtés mögött egy elszabott épületgépészeti terv és/vagy kivitelezés van,
-inkluzíve ötletszerűen tákolt fűtések.</p>
+    <head>
+        <title>Fűtési rendszerek beállítása és/vagy okosítása</title>
+        <style>
+            body {
+                width:1000px;
+                margin:0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Fűtési rendszerek beállítása és/vagy okosítása</h1>
 
-<p>Szóval, mielőtt a fűtést okosítanád, szaladj végig ezeken a pontokon.</p>
+        <h2>0. Túl hosszú, nem olvasom el</h2>
 
-<h2>1. Külső hőmérséklet érzékelő</h2>
+        <p>Szóval röviden, kezdésként mindenki próbálja meg:</p>
 
-<p>Veszel egy külső hőmérséklet érzékelőt (többnyire gyári tartozék), rákötöd a gázkazánra vagy a hőszivattyúra, beállítod az ingatlanra
-jellemző fűtési jelleggörbét, kompenzációs görbét, vagy bármi hasonlót, éppen a gyártó miképp hívja, ami majd a külső hőmérséklet alapján
-beállítja a gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és elfelejted az egész okosítás dolgot. Opcionálisan egy belső hőmérséklet
-érzékelőt is rákötsz (többnyire gyári tartozék), ami ad egy offset értéket, hogy pontosabban tudja tartani a kazán a kívánt hőmérsékletet,
-ha besütne a nap vagy szellőztetnél, de ha az épület nem ultra könnyűszerkezetes, akkor erre nincs szükség.</p>
+        <ol>
+            <li>beállítani az időjáráskövető vízhőmérsékletet,</li>
+            <li>beállítani a radiátorok és padlókörök hidraulikáját,</li>
+            <li>kimérni, hogy a saját hőforrásával olcsóbb-e melegen tartani vagy állítgatni kell,</li>
+            <li>hőszigetelni, hőszigetelni és hőszigetelni a házát.</li>
+        </ol>
 
-<p>Az alapja ennek az, hogy fűtéssel hőveszteséget pótlunk, a hőveszteség nagyon nagy részt egyenesen arányos a külső és a belső tér
-hőmérséklet különbségével, az arányt az épület eredő átlagos U értéke határozza meg. Egyszer kell nagyjából kimérni a megfelelő W/K értéket,
-például borús szélcsendes időben mérni egész nap külső hőmérsékletet és ebből számolható, hogy egy fok különbség hány watt fűtést igényel
-és onnantól önjáró a dolog.</p>
+        <hr/>
 
-<p>Ha a külső hőmérséklettel (nyilván fordítottan) arányos az előremenő víz hőmérséklete, akkor a fűtőtestek nagyrészt akkora teljesítményt
-adnak le, amennyit a ház éppen veszít, így nem lesznek nagy ugrások a leadott teljesítményt tekintve, attól függően, hogy éppen megy-e a
-kazán vagy sem.</p>
+        <p>
+            Az utóbbi időben többen kérdeztek fűtéssel kapcsolatban, vagy spórolással kapcsolatos tippeket kértek, vagy a fűtés okosításával kapcsolatban
+            kérdeztek, szóval próbáltam összefoglalni, ami tanácsokat adtam vagy amiket kérdeztek.
+        </p>
 
-<p>Mindennek az a lényege, hogy</p>
-<ol>
-<li>a gázkazán vagy a hőszivattyú folyamatos üzemben tudjon menni, ettől kevesebb lesz a ki-be kapcsolás miatti hőmérséklet ingadozás okozta
-hőtágulás, amitől amúgy is hamarabb kifáradna minden anyag benne,</li>
+        <p>
+            Az a meglátásom, hogy minden egyes okosítandó fűtés mögött egy elszabott épületgépészeti terv és/vagy kivitelezés van, inkluzíve ötletszerűen tákolt
+            fűtések. Szóval, mielőtt a fűtést okosítanád, szaladj végig ezeken a pontokon.
+        </p>
 
-<li>a hőmérséklet csökkenésével a nagyobb kondenzáció (5-10% csökkenés a gázfogyasztásban), illetve hőszivattyú esetén a kisebb hőlépcső miatt
-akár drasztikusan (50-100 százalék) is javulhat a COP,</li>
+        <p>
+            Akkor is hasznos végigszaladni a pontokon, ha nem akarod okosítani a fűtésedet, de szeretnél egy kicsit spórolni az energiával.
+        </p>
 
-<li>a folyamatos keringtetés miatt nem lesznek nagyobb és hirtelen hőmérséklet ingadozások a házon belül.</li>
-</ol>
+        <p><strong>Fontos: a legtöbb pont kondenzációs gázkazánra vagy hőszivattyúra igaz!</strong></p>
 
-<hr/>
+        <hr/>
 
-<p>Ezt lehet automatikusan vagy kézzel is művelni és mindez akár azt eredményezi, hogy termosztát nélkül lesz komfortos a fűtés, amit ősszel
-be kell kapcsolni, tavasszal meg ki... a termosztát egy rossz beidegződése az épületgépészetnek és/vagy a lakóknak, hogy nem tudnak anélkül
-fűtést elképzelni.</p>
+        <h2>1. Külső hőmérséklet érzékelő</h2>
 
-<h2>2. Hidraulikus beállítás</h2>
+        <p>
+            Veszel egy külső hőmérséklet érzékelőt (többnyire gyári tartozék), rákötöd a gázkazánra vagy a hőszivattyúra, beállítod az ingatlanra jellemző
+            fűtési jelleggörbét, kompenzációs görbét, vagy bármi hasonlót, éppen a gyártó miképp hívja, ami majd a külső hőmérséklet alapján beállítja a
+            gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és elfelejted az egész okosítás dolgot. Opcionálisan egy belső hőmérséklet érzékelőt is
+            rákötsz (többnyire gyári tartozék), ami ad egy offset értéket, hogy pontosabban tudja tartani a kazán a kívánt hőmérsékletet, ha besütne a nap vagy
+            szellőztetnél, de ha az épület nem ultra könnyűszerkezetes, akkor erre nincs szükség.
+        </p>
 
-<p>Ehhez hozzájön, hogy a legtöbb helyen a radiátorok a torlószelepekkel nincsenek jól beállítva, horrible dictu nincsenek torlószelepek.
-Minden radiátoron kettő szelep kellene legyen: egy torlószelep a visszatérő ágban, amivel a rendszer egészéhez képest beállítható az adott
-radiátor relatív hőteljesítménye és egy szelep a bejövő ágban, amivel ehhez az alapteljesítményhez képest lehet valamennyit állítani a
-teljesítményen, vagy manuálisan, vagy termosztatikus fejjel vagy valamilyen egyéb - elektronikus - megoldással. Ugyanez igaz padlófűtésre is,
-ahol be kell állítani a körök hidraulikáját, hogy mindenhol megfelelő legyen az áramlás és annyi hőt adjon le a fűtés, amennyi az adott
-helyiségben kell.</p>
+        <p>
+            Az alapja ennek az, hogy fűtéssel <em>hőveszteséget pótlunk</em>, a hőveszteség nagyon nagy részt egyenesen arányos a külső és a belső tér
+            hőmérséklet különbségével, az arányt az épület eredő átlagos U értéke határozza meg. Egyszer kell nagyjából kimérni a megfelelő W/K értéket, például
+            borús szélcsendes időben mérni egész nap külső hőmérsékletet és ebből számolható, hogy egy fok különbség hány watt fűtést igényel és onnantól önjáró
+            a dolog.
+        </p>
 
-<p>Ehhez vagy szakember kell és/vagy türelem, ki kell nyitni minden torlószelepet teljesen, bekapcsolni a fűtést az előző fejezetben
-beállított legalacsonyabb előremenő vízhőfokra és várni, amíg stabilizálódnak a hőmérsékletek és mindig kicsit zárni kell ott, ahol túl
-magas a szükségesnél a helyiség hőmérséklete. A helyes beállítás az, amikor minden helyiségben a szükséges és kívánt hőmérsékleten
-stabilizálódik a fűtés.</p>
+        <p>
+            Ha a külső hőmérséklettel (nyilván fordítottan) arányos az előremenő víz hőmérséklete, akkor a fűtőtestek nagyrészt akkora teljesítményt adnak le,
+            amennyit a ház éppen veszít, így nem lesznek nagy ugrások a leadott teljesítményt tekintve, attól függően, hogy éppen megy-e a kazán vagy sem.
+        </p>
 
-<p>Ehhez képest lehet és érdemes tekergetni vagy állítgatni a radiátorokon a felső szelepet, ha nem kell akkora hőteljesítmény, mint
-amire be van hangolva a rendszer, de ezzel kissé eltolódik a munkapontja a többi radiátornak vagy padlófűtés körnek.</p>
+        <p>Mindennek az a lényege, hogy</p>
+        <ol>
+            <li>
+                a gázkazán vagy a hőszivattyú folyamatos üzemben tudjon menni, ettől kevesebb lesz a ki-be kapcsolás miatti hőmérséklet ingadozás okozta
+                hőtágulás, amitől amúgy is hamarabb kifáradna minden anyag benne,
+            </li>
 
-<h2>2.1. Túláram szelep</h2>
+            <li>
+                a hőmérséklet csökkenésével a nagyobb a kondenzáció (5-10% csökkenés a gázfogyasztásban), illetve hőszivattyú esetén a kisebb hőlépcső miatt
+                akár drasztikusan (50-100 százalék) is javulhat a COP,
+            </li>
 
-<p>Alternatív megoldás az, hogy mindenhol termosztatikus fejek vannak vagy elektronikus vezérlésű szelepek, a kazán keringteti a
-beállított hőmérsékletű vizet, a radiátorok és a padlófűtés körei pedig annyira vannak nyitva, amennyire szükséges az adott helyiség fűtéséhez.</p>
+            <li>a folyamatos keringtetés miatt nem lesznek nagyobb és hirtelen hőmérséklet ingadozások a házon belül, ami szintén jelentős megtakarítás lehet,
+                hogy a beállított mondjuk 20 °C helyett 19 és 25 °C között ingadozik a hőmérséklet.
+            </li>
+        </ol>
 
-<p>Ha az első fejezet szerint nincs beállítva rendesen az előremenő vízhőmérséklet, vagy azt nem lehet alacsonyabbra állítani (mert például
-nem padlófűtéshez való gázkazánt tettek fel), akkor a gázkazánhoz kell egy ún. túláram szelep, amit az előremenő és a visszatérő ág közé kell
-betenni, adott nyomáskülönbség elérésekor nyit és visszavezeti az előremenő vizet a visszatérő ágba.</p>
+        <h3>1.1. Manuális vízhőmérséklet beállítás</h3>
+        <p>
+            Ha nem akarsz venni külső érzékelőt vagy a gázkazánodhoz nincs ilyen, akkor kézzel lehet állítani szinte mindegyik kazánon, annyira kell visszavenni
+            a vízhőmérsékletet, hogy a kazán nagyjából folyamatosan tudjon menni.
+        </p>
 
-<p>Erre azért van szükség, mert ha minden szelep lezár a radiátoroknál vagy a padlófűtésnél, akkor a kazánban megáll a vízáramlás - lévén
-a szelepek elzárják az előremenő és a visszatérő ág között a radiátorokat és padlófűtés köröket. Ilyenkor a gázkazán vagy hőszivattyú
-hibakóddal leállna, illetve a keringtető szivattyú fogyasztása megnövekedne. Ilyenkor a túláram szelep nyit, a gázkazán kb. saját magán
-belül keringteti a vizet, észreveszi, hogy nem kell fűtenie, kikapcsolja a fűtést és legkisebbre veszi a keringtetést.</p>
+        <p>
+            Mindez akár azt eredményezheti, hogy termosztát nélkül lesz komfortos a fűtés, amit ősszel be kell kapcsolni, tavasszal meg ki... a termosztát amúgy
+            is egy rossz beidegződése az épületgépészetnek és/vagy a lakóknak, hogy nem tudnak anélkül fűtést elképzelni.
+        </p>
 
-<p>Ha valamelyik fűtőtest nyit, akkor lecsökken a nyomás, a túláram szelep zár, a víz átmegy a fűtőtesten, a visszatérő ágba hidegebb
-víz kerül, a gázkazán vagy hőszivattyú ezt észreveszi és fűteni kezd.</p>
+        <hr/>
 
-<p>Hőszivattyú esetén az előremenő vízhőmérséklet tetszőlegesen alacsony lehet, szóval ott ez nem jellemző, ott úgy kell beállítani a
-radiátorok és a padlófűtés körökön a szelepeket, hogy soha nem zárjanak el teljesen.</p>
+        <h2>2. Hidraulikus beállítás</h2>
 
-<h2>2.2. Hidraulikus váltó vagy puffertartály</h2>
+        <p>
+            A legtöbb helyen a radiátorok a torlószelepekkel nincsenek jól beállítva, horrible dictu nincsenek torlószelepek.
+        </p>
 
-<p>Ha a gázkazán vagy hőszivattyú nem képes annyira alacsonyra csökkenteni a teljesítményét, amennyi az őszi és tavaszi enyhe
-hidegben kell, akkor megfontolandó hidraulikus váltó vagy inkább puffertartály beszerelése, amivel a hőtermelés és a hőfogyasztás
-közötti jelentős különbségeket át lehet hidalni. Ilyenkor a gázkazán vagy a hőszivattyú naponta megy két-három alkalommal 20-30 percet
-az ideálisan nagy teljesítményen és a ház fűtése a puffertartályból megy, akkor is, amikor a gázkazán vagy a hőszivattyú ki van kapcsolva
-és nem kapcsol be-ki 5-10 percenként pár másodpercre, mert túl nagy a legkisebb teljesítménye.</p>
+        <p>
+            Minden radiátoron kettő szelep kellene legyen: egy torlószelep a visszatérő ágban, amivel a rendszer egészéhez képest beállítható az adott radiátor
+            relatív hőteljesítménye és egy szelep a bejövő ágban, amivel ehhez az alapteljesítményhez képest lehet valamennyit állítani a teljesítményen, vagy
+            manuálisan, vagy termosztatikus fejjel vagy valamilyen egyéb - elektronikus - megoldással. Ugyanez igaz padlófűtésre is, ahol be kell állítani a
+            körök hidraulikáját, hogy mindenhol megfelelő legyen az áramlás és annyi hőt adjon le a fűtés, amennyi az adott helyiségben a többihez képest
+            szükséges.
+        </p>
 
-<h2>Hagyom lehűlni vs melegen tartom</h2>
+        <p>
+            Ehhez vagy szakember kell és/vagy türelem, ki kell nyitni minden torlószelepet teljesen, bekapcsolni a fűtést az előző fejezetben beállított
+            legalacsonyabb előremenő vízhőfokra és várni, amíg stabilizálódnak a hőmérsékletek és mindig kicsit zárni kell ott, ahol túl magas a szükségesnél a
+            helyiség hőmérséklete. A helyes beállítás az, amikor minden helyiségben a szükséges és kívánt hőmérsékleten stabilizálódik a fűtés.
+        </p>
 
-<p>Elterjedt legenda, hogy adott hőmérsékleten tartani kevesebb energia, mint hagyni kihűlni és visszamelegíteni. Nem, mindig több energia,
-ha be tudod bizonyítani az ellenkezőjét, akkor az instant fizikai Nobel-díjat jelent.</p>
+        <p>
+            Ehhez képest lehet és érdemes tekergetni vagy állítgatni a radiátorokon a felső szelepet, ha nem kell akkora hőteljesítmény, mint amire be van
+            hangolva a rendszer, de ezzel kissé eltolódik a munkapontja a többi radiátornak vagy padlófűtés körnek.
+        </p>
 
-<p>De: lehet kevesebb pénz adott hőmérsékleten tartani, ez függ attól, hogy milyen a hőtermelő berendezés. Például kondenzációs gázkazán
-esetén, ha az első fejezet szerint a lehető legkisebbre vetted az előremenő hőmérsékletet, akkor akár ~11 kWh hőenergia jön ki egy köbméter
-gázból. Ezzel tudsz stabil hőmérsékletet tartani. Ha kikapcsolod a gázkazánt, majd mielőtt hazaérsz, bekapcsolod, akkor magasabb
-vízhőmérséklet kell, hogy gyorsan pótold azt a hőenergiát, ami nappal elveszett és nem pótoltad benn. Ilyenkor a gázkazán kikerülhet
-a kondenzációs tartományból, mert mondjuk 60 °C feletti víz kell, hogy egy óra alatt felfűtse a helyiségeket, ekkor egy köbméter gázból
-~9 kWh hőenergia jön csak ki. Próbáltál spórolni, aztán végül több gáz fogy.</p>
+        <h3>2.1. Túláram szelep</h3>
 
-<p>Ugyanez igaz lehet a hőszivattyúra is, ha geotermikus a hőforrás, akkor tipikusan alul vannak méretezve a földben lévő hőcserélők
-és a folyamatos üzem és kisebb teljesítény esetén kisebb a hőmérséklet különbség, mint akkor, amikor gyorsan kell sok kW teljesítmény.
-Ilyenkor a COP drasztikusan romlani tud, pláne, ha a hőszivattyúban van boost fűtésként pár kW teljesítményű fűtőszál, ami COP=1 hatásfokkal
-"segít" a felfűtésben. Próbáltál spórolni, aztán végül kisebb lett a COP és többet fogyaszt a hőszivattyú.</p>
+        <p>
+            Alternatív megoldás az, hogy mindenhol termosztatikus fejek vannak vagy elektronikus vezérlésű szelepek, a kazán keringteti az 1. fejezet alapján
+            beállított alacsony hőmérsékletű vizet, a radiátorok és a padlófűtés körei pedig annyira vannak nyitva, amennyire szükséges az adott helyiség
+            fűtéséhez.
+        </p>
 
-<p>Ha régi gázkazánod, tisztán elektromos fűtésed, vegyes tüzelésű kazánod, egyebed van, akkor nem lesz érvényes, akkor érdemes a napon
-belüli kisebb fűtéssel játszani.</p>
+        <p>
+            Ha az első fejezet szerint nincs beállítva rendesen az előremenő vízhőmérséklet, vagy azt nem lehet alacsonyabbra állítani (mert például nem
+            padlófűtéshez való gázkazánt tettek fel), akkor a gázkazánhoz kell egy ún. túláram szelep, amit az előremenő és a visszatérő ág közé kell betenni,
+            adott nyomáskülönbség elérésekor nyit és visszavezeti az előremenő vizet a visszatérő ágba.
+        </p>
 
-<p>Szóval az ökölszabály: hagyni kihűlni mindig kevesebb energia, de lehet kevesebb pénz melegen tartani.</p>
+        <p>
+            Erre azért van szükség, mert ha minden szelep lezár a radiátoroknál vagy a padlófűtésnél, akkor a kazánban megáll a vízáramlás - lévén a szelepek
+            elzárják az előremenő és a visszatérő ág között a radiátorokat és padlófűtés köröket. Ilyenkor a gázkazán vagy hőszivattyú hibakóddal leállna,
+            illetve a keringtető szivattyú fogyasztása is megnövekedne. Ebben az esetben a túláram szelep nyit, a gázkazán kb. saját magán belül keringteti a
+            vizet, észreveszi, hogy nem kell fűtenie, kikapcsolja a fűtést és legkisebbre veszi a keringtetést.
+        </p>
 
-<h2>4. A hőkapacitás és hőszigetelés fontossága</h2>
+        <p>
+            Ha valamelyik fűtőtest nyit, akkor lecsökken a nyomás, a túláram szelep zár, a víz átmegy a fűtőtesten, a visszatérő ágba hidegebb víz kerül, a
+            gázkazán vagy hőszivattyú ezt észreveszi és fűteni kezd.
+        </p>
 
-<p>Ha egy-egy helyiségben, a fűtés kikapcsolásával 24 óra alatt 1-2 °C nagyobb a hőmérséklet csökkenése, akkor ott energetikai fejlesztésre
-van szükség, nem okosításra. Ami pénzt okosításra költenél, azt tedd félre hőszigetelésre vagy nyílászáró cserére. Az okosítással csak a
-nem elegendő hőszigetelés miatt elrontott komfortot tudod "okosan" növelni. Ha könnyűszerkezetes házad van, gondolkodj el hőkapacitás beépítésén,
-mert növeli a komfortot, ha van néhány (tucat) tonna átmelegedett anyag a belső térben, ami egy beton födémes és tömör téglás épületben adott.</p>
+        <p>
+            Hőszivattyú esetén az előremenő vízhőmérséklet tetszőlegesen alacsony lehet, szóval ott ez nem jellemző, ott úgy kell beállítani a radiátorok és a
+            padlófűtés körökön a szelepeket és a hőszivattyú előremenő vízhőfokát, hogy soha ne zárjanak el teljesen.
+        </p>
 
-<p>Szóval legyen benn hőkapacitás és legyen megfelelő hőszigetelés. Minden más csak körbetákolása a problémának.</p>
+        <h3>2.2. Hidraulikus váltó vagy puffertartály</h3>
 
-TLDR
-<p>Röviden: kezdésként mindenki próbálja meg beállítani:</p>
-<ol>
-<li>időjáráskövető vízhőmérsékletet,</li>
-<li>a radiátorok és padlókörök hidraulikáját,</li>
-<li>mérje ki, hogy a saját hőforrásával olcsóbb-e melegen tartani vagy állítgatni kell,</li>
-<li>hőszigetelni-hőszigetelni-hőszigetelni.</li>
-</ol>
-<body>
+        <p>
+            Ha a gázkazán vagy hőszivattyú nem képes annyira alacsonyra csökkenteni a teljesítményét, amennyi az őszi és tavaszi enyhe hidegben kell, akkor
+            megfontolandó hidraulikus váltó vagy inkább egy megfelelő méretű puffertartály beszerelése, amivel a hőtermelés és a hőfogyasztás közötti jelentős
+            különbségeket át lehet hidalni. Ilyenkor a gázkazán vagy a hőszivattyú naponta megy két-három alkalommal 1-2 órát megy az ideálisan nagy
+            teljesítményen és a ház fűtése a puffertartályból megy, akkor is, amikor a gázkazán vagy a hőszivattyú ki van kapcsolva és nem kapcsol be-ki 5-10
+            percenként 1-2 percre, mert túl nagy a legkisebb teljesítménye.
+        </p>
+
+        <hr/>
+
+        <h2>3. Hagyjam lehűlni vagy melegen tartsam?</h2>
+
+        <p>
+            Elterjedt legenda, hogy adott hőmérsékleten tartani kevesebb energia, mint hagyni kihűlni és visszamelegíteni. Nem, mindig több energia, ha be tudod
+            bizonyítani az ellenkezőjét, akkor az instant fizikai Nobel-díjat jelent.
+        </p>
+
+        <p>
+            <strong>De:</strong> lehet kevesebb pénz adott hőmérsékleten tartani, ez függ attól, hogy milyen a hőtermelő berendezés. Például kondenzációs
+            gázkazán esetén, ha az első fejezet szerint a lehető legkisebbre vetted az előremenő hőmérsékletet, akkor akár ~11 kWh hőenergia jön ki egy köbméter
+            gázból. Ezzel tudsz stabil hőmérsékletet tartani. Ha kikapcsolod a gázkazánt, majd mielőtt hazaérsz, bekapcsolod, akkor magasabb vízhőmérséklet
+            kell, hogy gyorsan pótold azt a hőenergiát, ami nappal elveszett és nem pótoltad folyamatosan alacsony vízhőmérséklettel. Ilyenkor a gázkazán
+            kikerülhet a kondenzációs tartományból, mert mondjuk 60 °C feletti víz kell, hogy 8-10 óra fűtési szünet után egy óra alatt felfűtse a helyiségeket,
+            ekkor egy köbméter gázból ~9 kWh hőenergia jön csak ki. Próbáltál spórolni, aztán végül több gáz fogy.
+        </p>
+
+        <p>
+            Ugyanez igaz lehet a hőszivattyúra is, ha geotermikus a hőforrás, akkor tipikusan alul vannak méretezve a földben lévő hőcserélők és a folyamatos
+            üzem és kisebb teljesítény esetén kisebb a hőmérséklet különbség, mint akkor, amikor gyorsan kell sok kW teljesítmény. Ilyenkor a COP drasztikusan
+            romlani tud, pláne, ha a hőszivattyúban van boost fűtésként pár kW teljesítményű fűtőszál, ami COP=1 hatásfokkal "segít" a felfűtésben. Próbáltál
+            spórolni, aztán végül kisebb lett a COP és többet fogyaszt a hőszivattyú.
+        </p>
+
+        <p>
+            Ha régi gázkazánod, tisztán elektromos fűtésed, vegyes tüzelésű kazánod, egyebed van, akkor nem lesz érvényes, akkor érdemes a napon belüli kisebb
+            fűtéssel játszani.
+        </p>
+
+        <p>Szóval az ökölszabály: hagyni kihűlni mindig kevesebb energia, de lehet kevesebb pénz melegen tartani.</p>
+
+        <hr/>
+
+        <h2>4. A hőkapacitás és hőszigetelés fontossága</h2>
+
+        <p>
+            Ha egy-egy helyiségben, a fűtés kikapcsolásával 24 óra alatt 1-2 °C nagyobb a hőmérséklet csökkenése, akkor ott energetikai fejlesztésre van
+            szükség, nem okosításra. Ami pénzt okosításra költenél, azt tedd félre hőszigetelésre vagy nyílászáró cserére. Az okosítással csak a nem elegendő
+            hőszigetelés miatt elrontott komfortot tudod "okosan" növelni. Ha könnyűszerkezetes házad van, gondolkodj el hőkapacitás beépítésén, mert növeli a
+            komfortot, ha van néhány (tucat) tonna átmelegedett anyag a belső térben, ami egy beton födémes és tömör téglás épületben adott.
+        </p>
+
+        <p>Szóval legyen benn hőkapacitás és legyen megfelelő hőszigetelés. Minden más csak körbetákolása a problémának.</p>
+    </body>
 </html>
