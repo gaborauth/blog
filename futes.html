@@ -17,9 +17,11 @@
             kérdeztek, szóval próbáltam összefoglalni, ami tanácsokat adtam vagy amiket kérdeztek.
         </p>
 
+        <hr/>
+
         <p>
-            Az a meglátásom, hogy minden egyes okosítandó fűtés mögött egy elszabott épületgépészeti terv és/vagy kivitelezés van, inkluzíve ötletszerűen tákolt
-            fűtések. Szóval, mielőtt a fűtést okosítanád, szaladj végig ezeken a pontokon.
+            Alapvetően az a meglátásom, hogy minden egyes okosítandó fűtés mögött egy elszabott épületgépészeti terv és/vagy kivitelezés van, inkluzíve
+            ötletszerűen tákolt fűtések. Szóval, mielőtt a fűtést okosítanád, szaladj végig ezeken a pontokon.
         </p>
 
         <p>
@@ -38,7 +40,7 @@
             <li>beállítani az időjáráskövető vízhőmérsékletet,</li>
             <li>beállítani a radiátorok és padlókörök hidraulikáját,</li>
             <li>kimérni, hogy a saját hőforrásával olcsóbb-e melegen tartani vagy állítgatni kell,</li>
-            <li>csökkentsd használati meleg víz hőmérsékletét,</li>
+            <li>csökkenteni használati meleg víz hőmérsékletét,</li>
             <li>hőszigetelni, hőszigetelni és hőszigetelni a házát.</li>
         </ol>
 
@@ -48,15 +50,21 @@
 
         <p>
             Az alap az, hogy <strong>a fűtéssel</strong> <em>hőveszteséget pótlunk</em>, a hőveszteség nagyon nagy részt egyenesen arányos a külső és a belső
-            tér hőmérséklet különbségével, az arányt az épület eredő átlagos U értéke határozza meg. Egyszer kell nagyjából kimérni a megfelelő W/K értéket,
-            például borús szélcsendes időben mérni egész nap külső hőmérsékletet, átlagolni és ebből számolható, hogy egy fok különbség hány watt fűtést igényel
-            és onnantól majdnem önjáró a dolog.
+            tér hőmérséklet különbségével, az arányt az épület eredő átlagos U értéke határozza meg. Tehát ha benn szeretnénk 20 °C hőmérsékletet és kinn 0 °C
+            van, akkor kétszer annyi hőenergiára van szükség, mint amikor kinn 10 °C van. Ugyanez igaz amúgy nyáron, amikor kinn melegebb van, csak akkor
+            hőenergiát kell kivonni a házból, minél melegebb van kinn, annál többet.
         </p>
 
         <p>
-            Veszel egy külső hőmérséklet érzékelőt (többnyire gyári tartozék), rákötöd a gázkazánra vagy a hőszivattyúra, beállítod az ingatlanra jellemző
+            Egyszer kell nagyjából kimérni a megfelelő W/°C értéket, tehát azt, hogy egy °C hőmérséklet különbség esetén hány watt fűtésre van szüksége a
+            háznak, például borús szélcsendes időben mérni egész nap külső hőmérsékletet, átlagolni és ebből számolható, hogy egy fok különbség hány watt fűtést
+            igényel és onnantól majdnem önjáró a dolog.
+        </p>
+
+        <p>
+            Vegyél egy külső hőmérséklet érzékelőt (többnyire gyári tartozék), kösd rá a gázkazánra vagy a hőszivattyúra, állítsd be az ingatlanra jellemző
             fűtési jelleggörbét, kompenzációs görbét, vagy bármi hasonlót, éppen a gyártó miképp hívja, ami majd a külső hőmérséklet alapján beállítja a
-            gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és elfelejted az egész okosítás dolgot. Opcionálisan egy belső hőmérséklet érzékelőt is
+            gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és felejtsd el az egész okosítás dolgot. Opcionálisan egy belső hőmérséklet érzékelőt is
             rákötsz (többnyire gyári tartozék), ami ad egy offset értéket, hogy pontosabban tudja tartani a kazán a kívánt hőmérsékletet, ha besütne a nap vagy
             szellőztetnél, de ha az épület nem ultra könnyűszerkezetes, akkor erre nincs szükség.
         </p>
@@ -86,9 +94,52 @@
         </ol>
 
         <p>
-            Mindez akár azt eredményezheti, hogy termosztát nélkül lesz komfortos a fűtés, amit ősszel be kell kapcsolni, tavasszal meg ki... a termosztát amúgy
-            is egy rossz beidegződése az épületgépészetnek és/vagy a lakóknak, hogy nem tudnak anélkül fűtést elképzelni.
+            Mindez akár azt eredményezheti, hogy ki-be kapcsoló termosztát nélkül lesz komfortos a fűtés, amit ősszel be kell kapcsolni, tavasszal meg ki...
+            a gázkazánt ki-be kapcsoló termosztát amúgy is egy rossz beidegződése az épületgépészetnek és/vagy a lakóknak, hogy nem tudnak anélkül fűtést
+            elképzelni.
         </p>
+
+        <div style="background-color: #efffef;">
+            <h4>Miért fogyaszt kevesebbet a kondenzációs gázkazán, ha alacsonyabb a víz hőmérséklete?</h4>
+
+            <p>
+                Kezdjük az elején: amikor elégetünk földgázt, akkor az égéstermék nagy része forró szén-dioxid és vízgőz lesz, kisebb részt különféle egyéb
+                oxidok. Ez a füstgáz keresztül van vezetve egy hőcserélőn, amin keresztülfolyatjuk a fűtéshez használt vizet, így a víz felmelegszik, a füstgáz
+                pedig közben lehűl.
+            </p>
+
+            <p>
+                Amikor a vízgőzt lehűtjük, akkor a hidegebb felületeken kicsapódik, mint vízpára, ami az égéstermékek miatt erősen savas, képes megmarni a
+                kéményt, kazánt, egyebeket, ezért a nem kondenzációs kazánoknál ezt a jelenséget nem szeretjük, mert káros, ezért van az, hogy a régebbi
+                gázkazánok esetén nem lehet 50-55 °C alatti vízhőmérsékletet beállítani, mert akkor már 100 °C alá fog hűlni a füstgáz a kazánban, ezért elkezd
+                kicsapódni a víz, amire a kazán nincs felkészítve.
+            </p>
+
+            <p>
+                A kondenzációs gázkazánoknál viszont <em>tervezett cél</em> az, hogy a vízpára a kazánon belül csapódjon ki. Miért? Mert a vízpárában látens
+                hőenergia van, amikor a víz gőzzé válik, ahhoz nagyon sok energia kell, és amikor a vízgőzből folyékony víz lesz, az sok hőenergiát ad. Ez az
+                a hőenergia, ami a nem kondenzációs kazánnál kimegy a kéményen a vízgőzzel.
+            </p>
+
+            <p>
+                És most jön a lényeges trükk: minél alacsonyabb a gázkazán hőcserélőjében a keringő fűtési víz hőmérséklete, annál több vízgőz fog kicsapódni
+                és ezzel plusz hőenegiát tud a kazán kinyerni a füstgázból. Ez a jelenség 45-50 °C vízhőmérsékletnél megszűnik, nyilván minnél alacsonyabb
+                a beállított vízhőmérséklet, annál több plusz hőenergiát lehet nyerni.
+            </p>
+
+            <p>
+                Ez azt jelenti, hogy egy köbméter gázból akár ~11 kWh hőenergia is nyerhető, ha 25 fokos a keringtetett víz (például padlófűtés esetén) és csak
+                ~9 kWh hőenergia jön ki, ha 60 °C a víz, ami be van állítva. Megfordítva: akár 20 százalékkal kevesebb gáz fogy, de ugyanannyi hőenergiát
+                kapunk végül.
+            </p>
+
+            <p>
+                Ezen túl a másik jelenség az, hogy a gázkazán alacsony teljesítményen alacsonyabb füstgáz hőmérséklettel tudja tartani a beállított
+                vízhőmérsékletet. Minél nagyobb a leadott teljesítmény, annál magasabb lesz végül a füstgáz hőmérséklete, annál kevesebb a kondenzációval
+                nyerhető hő, így előfordulhat, hogy az alacsony vízhőmérséklet dacára a kazán kikerül a kondenzációs tartományból. Ennek akkor van jelentősége,
+                amikor hagyjuk kihűlni a házat, aztán hazaérünk és a gázkazán maximális teljesítményen próbálja kifűteni.
+            </p>
+        </div>
 
         <h3>1.1. Manuális vízhőmérséklet beállítás</h3>
         <p>
