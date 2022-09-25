@@ -4,7 +4,11 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRF7XQTP6X"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
 
             gtag('config', 'G-MRF7XQTP6X');
@@ -12,7 +16,6 @@
         <title>Fűtési rendszerek beállítása és/vagy okosítása</title>
         <style>
             body {
-
                 margin: 5%;
                 font-size: 150%;
             }
@@ -72,15 +75,22 @@
         <p>
             Egyszer kell nagyjából kimérni a megfelelő W/°C értéket, tehát azt, hogy egy °C hőmérséklet különbség esetén hány watt fűtésre van szüksége a
             háznak, például borús szélcsendes időben mérni egész nap külső hőmérsékletet, átlagolni és ebből számolható, hogy egy fok különbség hány watt fűtést
-            igényel és onnantól majdnem önjáró a dolog.
+            igényel ezt beállítani a gázkazánon vagy hőszivattyún és onnantól majdnem önjáró a dolog.
         </p>
 
         <p>
-            Vegyél egy külső hőmérséklet érzékelőt (többnyire gyári tartozék), kösd rá a gázkazánra vagy a hőszivattyúra, állítsd be az ingatlanra jellemző
-            fűtési jelleggörbét, kompenzációs görbét, vagy bármi hasonlót, éppen a gyártó miképp hívja, ami majd a külső hőmérséklet alapján beállítja a
-            gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és felejtsd el az egész okosítás dolgot. Opcionálisan egy belső hőmérséklet érzékelőt is
-            rákötsz (többnyire gyári tartozék), ami ad egy offset értéket, hogy pontosabban tudja tartani a kazán a kívánt hőmérsékletet, ha besütne a nap vagy
-            szellőztetnél, de ha az épület nem ultra könnyűszerkezetes, akkor erre nincs szükség.
+            Ha megvan, hogy mennyi watt, akkor tudni kell, hogy a radiátorok és a padlófűtés teljesítménye arányos az előremenő és a visszatérő víz
+            hőmérsékletével, tehát ha be tudjuk állítani a gázkazánnál vagy a hőszivattyún a szükséges teljesítményt, akkor a radiátorok és a padlófűtés ezt
+            a teljesítményt le fogja adni a házban, ahonnan majd a falakon és födémen át a külvilágba távozik, arányosan a külső hőmérséklettel.
+        </p>
+
+        <p>
+            Honnan fogja tudni a gázkazán vagy a hőszivattyú, hogy mekkora teljesítmény kell? Vegyél egy külső hőmérséklet érzékelőt (többnyire gyári tartozék),
+            kösd rá a gázkazánra vagy a hőszivattyúra, állítsd be az ingatlanra jellemző fűtési jelleggörbét, kompenzációs görbét, vagy bármi hasonlót, éppen a
+            gyártó miképp hívja, ami majd a külső hőmérséklet alapján beállítja a gázkazán vagy a hőszivattyú előremenő vízhőmérsékletét és felejtsd el az egész
+            okosítás dolgot. Opcionálisan egy belső hőmérséklet érzékelőt is rákötsz (többnyire gyári tartozék), ami ad egy offset értéket, hogy pontosabban
+            tudja tartani a kazán a kívánt hőmérsékletet, ha besütne a nap vagy szellőztetnél, de ha az épület nem ultra könnyűszerkezetes, akkor erre nincs
+            szükség.
         </p>
 
         <p>
@@ -101,7 +111,8 @@
                 akár drasztikusan (50-100 százalékkal!) is javulhat a COP,
             </li>
 
-            <li>a folyamatos keringtetés miatt nem lesznek nagyobb és hirtelen hőmérséklet ingadozások a házon belül, ami szintén jelentős megtakarítás lehet,
+            <li>
+                a folyamatos keringtetés miatt nem lesznek nagyobb és hirtelen hőmérséklet ingadozások a házon belül, ami szintén jelentős megtakarítás lehet,
                 hogy a beállított mondjuk 20 °C helyett nem 19 és 25 °C között ingadozik a hőmérséklet a túl forró víz miatti túlmelegítés miatt, hanem 20 °C
                 körül mozog (ez is lehet ~5-15% megtakarítás!).
             </li>
@@ -159,7 +170,8 @@
         <p>
             Ha nem akarsz venni külső érzékelőt vagy a gázkazánodhoz nincs ilyen, akkor kézzel lehet állítani szinte mindegyik kazánon, annyira kell visszavenni
             a vízhőmérsékletet, hogy a kazán nagyjából folyamatosan akarjon menni és ne fűtse fel túlságosan az ingatlant, ilyenkor nyilván kellni fog
-            termosztát, ami azért kikapcsolja a gázkazánt, ha túl nagyon fűtene, de a lényeg az, hogy naponta ne legyen túl sok ki-be kapcsolás.
+            termosztát, ami azért kikapcsolja a gázkazánt, ha túl nagyon fűtene, de a lényeg az, hogy naponta ne legyen túl sok ki-be kapcsolás, általában elég
+            hetente egyszer változtatni, de lehet akár naponta is többször is.
         </p>
 
         <hr/>
@@ -167,7 +179,7 @@
         <h2>2. Hidraulikus beállítás</h2>
 
         <p>
-            A legtöbb helyen a radiátorok a torlószelepekkel nincsenek jól beállítva, horrible dictu nincsenek torlószelepek.
+            A legtöbb helyen a radiátorok a torlószelepekkel nincsenek jól beállítva, horribile dictu nincsenek is torlószelepek.
         </p>
 
         <p>
@@ -207,14 +219,16 @@
         <p>
             Erre azért van szükség, mert ha minden szelep lezár a radiátoroknál vagy a padlófűtésnél, akkor a kazánban megáll a vízáramlás - lévén a szelepek
             elzárják az előremenő és a visszatérő ág között a radiátorokat és padlófűtés köröket. Ilyenkor a gázkazán vagy hőszivattyú hibakóddal leállna,
-            illetve a keringtető szivattyú fogyasztása is megnövekedne. Ebben az esetben a túláram szelep nyit, a gázkazán kb. saját magán belül keringteti a
-            vizet, észreveszi, hogy nem kell fűtenie, kikapcsolja a fűtést és legkisebbre veszi a keringtetést. Nem nagyon van olyan kondenzációs gázkazán,
-            amelyik ne kapcsolná le ilyenkor a fűtést, de szintén érdemes elolvasni a gépkönyvet.
+            illetve a keringtető szivattyú fogyasztása is megnövekedne, ha mégse állna le. Ebben az esetben a túláram szelep nyit, a gázkazán kb. saját magán
+            belül keringteti a vizet, észreveszi, hogy nem kell fűtenie, kikapcsolja a fűtést és legkisebbre veszi a keringtetést. Nem nagyon van olyan
+            kondenzációs gázkazán, amelyik ne kapcsolná le ilyenkor a fűtést, de szintén érdemes elolvasni a gépkönyvet.
         </p>
 
         <p>
             A fenti állapot akkor ér véget, ha valamelyik fűtőtest nyit, akkor lecsökken a rendszerben a nyomás, a túláram szelep zár, a víz átmegy a
-            fűtőtesten, a visszatérő ágba hidegebb víz kerül, a gázkazán vagy hőszivattyú ezt észreveszi és fűteni kezd. És ezt fogja csinálni ősztől tavaszig.
+            fűtőtesten, a visszatérő ágba hidegebb víz kerül, a gázkazán vagy hőszivattyú ezt észreveszi és fűteni kezd. És ezt fogja csinálni ősztől tavaszig,
+            nem kell külön termosztát, amit hetekig tart olyan reprezentatív helyre tenni, ahonnan majd ki-be kapcsolja a kazán és mindenhol jó lesz a
+            hőmérséklet.
         </p>
 
         <p>
@@ -225,11 +239,11 @@
         <h3>2.2. Hidraulikus váltó vagy puffertartály</h3>
 
         <p>
-            Ha a gázkazán vagy hőszivattyú nem képes annyira alacsonyra csökkenteni a teljesítményét, amennyi az őszi és tavaszi enyhe hidegben kell, akkor
-            megfontolandó hidraulikus váltó vagy inkább egy megfelelő méretű puffertartály beszerelése, amivel a hőtermelés és a hőfogyasztás közötti jelentős
-            különbségeket át lehet hidalni. Ilyenkor a gázkazán vagy a hőszivattyú naponta megy két-három alkalommal 1-2 órát az ideálisan nagy teljesítményen
-            és a ház fűtése a puffertartályból megy, akkor is, amikor a gázkazán vagy a hőszivattyú ki van kapcsolva és nem kapcsol be-ki 5-10 percenként 1-2
-            percre, mert túl nagy a legkisebb teljesítménye is.
+            Ha a gázkazán vagy hőszivattyú nem képes annyira alacsonyra csökkenteni a teljesítményét, amennyi az őszi és tavaszi enyhe hidegben kell, esetleg
+            téli napok nagy részén is túl nagy teljesítményű, akkor megfontolandó hidraulikus váltó vagy inkább egy megfelelő méretű puffertartály beszerelése,
+            amivel a hőtermelés és a hőfogyasztás közötti jelentős különbségeket át lehet hidalni. Ilyenkor a gázkazán vagy a hőszivattyú naponta megy két-három
+            alkalommal 1-2 órát az ideálisan nagy teljesítményen és a ház fűtése a puffertartályból megy, akkor is, amikor a gázkazán vagy a hőszivattyú ki
+            van kapcsolva és nem kapcsol be-ki 5-10 percenként 1-2 percre, mert túl nagy a legkisebb teljesítménye is.
         </p>
 
         <hr/>
